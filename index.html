@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exsersewo</title>
+    <link type="text/css" rel="stylesheet" href="//exsersewo.github.io/css/home.css">
+    <link href="//fonts.googleapis.com/css?family=Jura" rel="stylesheet" type="text/css">
+	  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="type" content="website" />
+    <meta name="url" content="//exsersewo.github.io/" />
+    <meta name="title" content="Exsersewo" />
+    <meta name="description" content="Student Developer living in the UK. I also do things sometimes, usually in C#" />
+    <meta name="site_name" content="Exsersewo" />
+    <meta name="locale" content="en-GB" />
+    <meta name="image" content="//exsersewo.github.io/img/profile.png" />
+    <meta property="og:image" content="//exsersewo.github.io/img/profile.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="//exsersewo.github.io/" />
+    <meta property="og:title" content="Exsersewo" />
+    <meta property="og:description" content="Student Developer living in the UK. I also do things sometimes, usually in C#" />
+    <meta property="og:site_name" content="Exsersewo" />
+    <meta property="og:locale" content="en-GB" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+	  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" defer></script>
+</head>
+<body>
+  <div id="landing">
+    <video autoplay muted loop id="landing-img">
+      <source src="//exsersewo.dev/mp4/back.mp4" type="video/mp4">
+    </video>
+    <div id="landing-profile">
+      <div id="name-img">
+        <img src="/img/profile.png" alt="User Avatar" />
+        <div id="username">
+          <h1 class="shadow"><?=$usr->FullName?></h1>
+          <p id="slogan">I do things sometimes. Usually in C#</p>
+        </div>
+      </div>
+      <div id="buttons">
+        <a href="//twitter.com/exsersewo" target="_blank" class="button twitter"><i class="fa fa-twitter"></i> Twitter</a>
+        <a href="//github.com/exsersewo" target="_blank" class="button github"><i class="fa fa-github"></i> Github</a>
+        <a href="//www.linkedin.com/in/exsersewo/" target="_blank" class="button linkedin"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+        <a href="//kitsu.io/users/exsersewo" target="_blank" class="button kitsu"><i class="fa fa-tv"></i> Kitsu</a>
+        <a href="//twitch.tv/exsersewo" target="_blank" class="button twitch"><i class="fa fa-twitch"></i> Twitch</a>
+        <a href="//reddit.com/u/exsersewo" target="_blank" class="button reddit"><i class="fa fa-reddit-alien"></i> Reddit</a>
+        <a href="//steamcommunity.com/id/exsersewo" target="_blank" class="button steam"><i class="fa fa-steam"></i> Steam</a>
+        <a href="mailto:hello@exsersewo.dev" target="_blank" class="button email"><i class="fa fa-envelope"></i> Email</a>
+      </div>
+    </div>
+    <div id="info">
+      <div class="content-block" id="whoami">
+        <div class="content-head">
+          📝Who am I?
+        </div>
+        <div class="content-text">
+          Hi I'm Lee, a Games Development student currently living in the UK.
+        </div>
+        </div>
+        <div class="content-block" id="whatdo">
+          <div class="content-head">
+            🤔Ok, but what do you do?
+          </div>
+          <div class="content-text">
+            I make things.<br>I've been developing for about 2 years, and currently play around with <span class="alt-text">C#, C++, JavaScript &amp; PHP.</span> I'm planning on learning more, most specifically <span class="alt-text">ASP.NET, Go, Kotlin, Perl &amp; Java.</span>
+          </div>
+        </div>
+        <div class="content-block" id="projects">
+          <div class="content-head">
+            💻 Projects
+          </div>
+          <div class="content-text">
+            <table id="project-table">
+              <tr><td><a href="//kitsu.systemexit.co.uk/">Kitsu</a></td><td class="pdesc">A Random Kitsune Image Website, useful for bots/websites</td></tr>
+              <tr><td><a href="//skuldbot.uk/">Skuld</a></td><td class="pdesc">A Discord bot that I did and is in a few servers, website is being re-designed</td></tr>
+              <tr><td><a href="//api.systemexit.co.uk/">Bot API</a></td><td class="pdesc">An API that helps add extra fun to discord bots</td></tr>
+              <tr><td><a href="./nath/">Nathan</a></td><td class="pdesc">A Markov Chain Bot that generates random quotes</td></tr>
+              <tr class="strikethrough"><td><a href="#">Nydaliv</a></td><td class="pdesc">A Customizable Dungeons &amp; Dragons game (On hold)</td></tr>
+            </table>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+      "popup": {
+        "background": "#252e39"
+      },
+      "button": {
+        "background": "#14a7d0"
+      }
+      },
+      "theme": "classic",
+      "content": {
+      "message": "This website requires the use of cookies for the service and Cloudflare to work properly. Don't worry, I'm not evil. You can confirm this yourself in your development console. :)"
+      }
+    })});
+  </script>
+</body>
+</html>
