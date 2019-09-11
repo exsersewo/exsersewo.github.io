@@ -1,6 +1,0 @@
-User-Agent: *
-Disallow: /css/
-Disallow: /js/
-Disallow: /images/
-Disallow: /fonts/
-Crawl-delay: 10
